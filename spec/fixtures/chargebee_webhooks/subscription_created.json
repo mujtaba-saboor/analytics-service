@@ -1,0 +1,361 @@
+{
+  "headers": {
+    "Authorization": "Basic aGFzc2FuQGdyb3d0aHBoeXNpY3MuY29tOnRlc3RpbmcxMjM=",
+    "Content-Type": "application/json; charset=utf-8",
+    "User-Agent": "ChargeBee"
+  },
+  "body": {
+    "id": "ev_AzZlpqSOe2Kh6vHw",
+    "occurred_at": 1612985393,
+    "source": "api",
+    "user": "Rails App",
+    "object": "event",
+    "api_version": "v2",
+    "content": {
+      "subscription": {
+        "id": "AzZlpqSOe2KCWvHS",
+        "plan_id": "2_weeks",
+        "plan_quantity": 1,
+        "plan_unit_price": 0,
+        "billing_period": 2,
+        "billing_period_unit": "week",
+        "start_date": 1614358800,
+        "customer_id": "AzZlpqSOe2JiuvHD",
+        "plan_amount": 0,
+        "plan_free_quantity": 0,
+        "status": "future",
+        "next_billing_at": 1614358800,
+        "created_at": 1612985392,
+        "updated_at": 1612985393,
+        "has_scheduled_changes": false,
+        "resource_version": 1612985393833,
+        "deleted": false,
+        "object": "subscription",
+        "currency_code": "CAD",
+        "addons": [
+          {
+            "id": "beef_2_weeks",
+            "quantity": 228,
+            "unit_price": 60,
+            "amount": 13680,
+            "object": "addon"
+          },
+          {
+            "id": "chicken_2_weeks",
+            "quantity": 228,
+            "unit_price": 60,
+            "amount": 13680,
+            "object": "addon"
+          }
+        ],
+        "event_based_addons": [
+          {
+            "id": "beef_2_weeks-trial",
+            "quantity": 228,
+            "unit_price": 60,
+            "on_event": "subscription_creation",
+            "charge_once": true,
+            "object": "event_based_addon"
+          },
+          {
+            "id": "chicken_2_weeks-trial",
+            "quantity": 228,
+            "unit_price": 60,
+            "on_event": "subscription_creation",
+            "charge_once": true,
+            "object": "event_based_addon"
+          }
+        ],
+        "charged_event_based_addons": [
+          {
+            "id": "beef_2_weeks-trial",
+            "last_charged_at": 1612985392,
+            "object": "charged_event_based_addon"
+          },
+          {
+            "id": "chicken_2_weeks-trial",
+            "last_charged_at": 1612985392,
+            "object": "charged_event_based_addon"
+          }
+        ],
+        "due_invoices_count": 0,
+        "shipping_address": {
+          "first_name": "Ajandan",
+          "last_name": "Bagawan",
+          "email": "1@email.com",
+          "phone": "(624) 646-4714",
+          "line1": "194 Sunway Square",
+          "city": "Markham",
+          "state_code": "ON",
+          "state": "Ontario",
+          "country": "CA",
+          "zip": "L3P7X3",
+          "validation_status": "not_validated",
+          "object": "shipping_address"
+        },
+        "cf_trial_start_date": 1613149200,
+        "cf_dog_name": "ds"
+      },
+      "customer": {
+        "id": "AzZlpqSOe2JiuvHD",
+        "first_name": "Ajandan",
+        "last_name": "Bagawan",
+        "email": "1@email.com",
+        "phone": "(624) 646-4714",
+        "auto_collection": "on",
+        "net_term_days": 0,
+        "allow_direct_debit": false,
+        "created_at": 1612985390,
+        "taxability": "taxable",
+        "updated_at": 1612985391,
+        "pii_cleared": "active",
+        "resource_version": 1612985391625,
+        "deleted": false,
+        "object": "customer",
+        "billing_address": {
+          "first_name": "Ajandan",
+          "last_name": "Bagawan",
+          "email": "1@email.com",
+          "phone": "(624) 646-4714",
+          "line1": "194 Sunway Square",
+          "city": "Markham",
+          "state_code": "ON",
+          "state": "Ontario",
+          "country": "CA",
+          "zip": "L3P7X3",
+          "validation_status": "not_validated",
+          "object": "billing_address"
+        },
+        "card_status": "valid",
+        "promotional_credits": 0,
+        "refundable_credits": 0,
+        "excess_payments": 0,
+        "unbilled_charges": 0,
+        "preferred_currency_code": "CAD",
+        "primary_payment_source_id": "pm_AzZlpqSOe2K5FvHE",
+        "payment_method": {
+          "object": "payment_method",
+          "type": "card",
+          "reference_id": "cus_IvEr1bNj0yI4ZG/card_1IJONlJoEoL3sH1FiyPz50zG",
+          "gateway": "stripe",
+          "gateway_account_id": "gw_1mkVvmMRNq4CpP1GkO",
+          "status": "valid"
+        }
+      },
+      "card": {
+        "status": "valid",
+        "gateway": "stripe",
+        "gateway_account_id": "gw_1mkVvmMRNq4CpP1GkO",
+        "iin": "******",
+        "last4": "4242",
+        "card_type": "visa",
+        "funding_type": "credit",
+        "expiry_month": 12,
+        "expiry_year": 2023,
+        "issuing_country": "US",
+        "created_at": 1612985391,
+        "updated_at": 1612985391,
+        "powered_by": "not_applicable",
+        "resource_version": 1612985391625,
+        "object": "card",
+        "masked_number": "************4242",
+        "customer_id": "AzZlpqSOe2JiuvHD",
+        "payment_source_id": "pm_AzZlpqSOe2K5FvHE"
+      },
+      "invoice": {
+        "id": "7044",
+        "customer_id": "AzZlpqSOe2JiuvHD",
+        "subscription_id": "AzZlpqSOe2KCWvHS",
+        "recurring": false,
+        "status": "paid",
+        "price_type": "tax_exclusive",
+        "date": 1612985392,
+        "due_date": 1612985392,
+        "net_term_days": 0,
+        "exchange_rate": 1,
+        "total": 18550,
+        "amount_paid": 18550,
+        "amount_adjusted": 0,
+        "write_off_amount": 0,
+        "credits_applied": 0,
+        "amount_due": 0,
+        "paid_at": 1612985392,
+        "updated_at": 1612985393,
+        "resource_version": 1612985393825,
+        "deleted": false,
+        "object": "invoice",
+        "first_invoice": true,
+        "amount_to_collect": 0,
+        "round_off_amount": 0,
+        "new_sales_amount": 18550,
+        "has_advance_charges": false,
+        "currency_code": "CAD",
+        "base_currency_code": "CAD",
+        "is_gifted": false,
+        "term_finalized": true,
+        "tax": 2134,
+        "line_items": [
+          {
+            "id": "li_AzZlpqSOe2KDevHU",
+            "date_from": 1612985392,
+            "date_to": 1612985392,
+            "unit_amount": 60,
+            "quantity": 228,
+            "amount": 13680,
+            "pricing_model": "per_unit",
+            "is_taxed": true,
+            "tax_amount": 1067,
+            "tax_rate": 13,
+            "object": "line_item",
+            "subscription_id": "AzZlpqSOe2KCWvHS",
+            "customer_id": "AzZlpqSOe2JiuvHD",
+            "description": "Savoury Beef Recipe 2 week trial",
+            "entity_type": "addon",
+            "entity_id": "beef_2_weeks-trial",
+            "discount_amount": 5472,
+            "item_level_discount_amount": 0
+          },
+          {
+            "id": "li_AzZlpqSOe2KDivHV",
+            "date_from": 1612985392,
+            "date_to": 1612985392,
+            "unit_amount": 60,
+            "quantity": 228,
+            "amount": 13680,
+            "pricing_model": "per_unit",
+            "is_taxed": true,
+            "tax_amount": 1067,
+            "tax_rate": 13,
+            "object": "line_item",
+            "subscription_id": "AzZlpqSOe2KCWvHS",
+            "customer_id": "AzZlpqSOe2JiuvHD",
+            "description": "Tender Chicken Recipe 2 week trial",
+            "entity_type": "addon",
+            "entity_id": "chicken_2_weeks-trial",
+            "discount_amount": 5472,
+            "item_level_discount_amount": 0
+          }
+        ],
+        "discounts": [
+          {
+            "object": "discount",
+            "entity_type": "document_level_coupon",
+            "description": "First order discount (40%)",
+            "amount": 10944,
+            "entity_id": "40off"
+          }
+        ],
+        "line_item_discounts": [
+          {
+            "object": "line_item_discount",
+            "line_item_id": "li_AzZlpqSOe2KDevHU",
+            "discount_type": "document_level_coupon",
+            "discount_amount": 5472,
+            "coupon_id": "40off"
+          },
+          {
+            "object": "line_item_discount",
+            "line_item_id": "li_AzZlpqSOe2KDivHV",
+            "discount_type": "document_level_coupon",
+            "discount_amount": 5472,
+            "coupon_id": "40off"
+          }
+        ],
+        "taxes": [
+          {
+            "object": "tax",
+            "name": "HST",
+            "description": "HST @ 13%",
+            "amount": 2134
+          }
+        ],
+        "line_item_taxes": [
+          {
+            "tax_name": "HST",
+            "tax_rate": 13,
+            "tax_juris_type": "state",
+            "tax_juris_name": "Ontario",
+            "tax_juris_code": "ON",
+            "object": "line_item_tax",
+            "line_item_id": "li_AzZlpqSOe2KDevHU",
+            "tax_amount": 1067,
+            "is_partial_tax_applied": false,
+            "taxable_amount": 8208,
+            "is_non_compliance_tax": false
+          },
+          {
+            "tax_name": "HST",
+            "tax_rate": 13,
+            "tax_juris_type": "state",
+            "tax_juris_name": "Ontario",
+            "tax_juris_code": "ON",
+            "object": "line_item_tax",
+            "line_item_id": "li_AzZlpqSOe2KDivHV",
+            "tax_amount": 1067,
+            "is_partial_tax_applied": false,
+            "taxable_amount": 8208,
+            "is_non_compliance_tax": false
+          }
+        ],
+        "sub_total": 27360,
+        "linked_payments": [
+          {
+            "txn_id": "txn_AzZlpqSOe2KF8vHY",
+            "applied_amount": 18550,
+            "applied_at": 1612985393,
+            "txn_status": "success",
+            "txn_date": 1612985392,
+            "txn_amount": 18550
+          }
+        ],
+        "dunning_attempts": [],
+        "applied_credits": [],
+        "adjustment_credit_notes": [],
+        "issued_credit_notes": [],
+        "linked_orders": [],
+        "billing_address": {
+          "first_name": "Ajandan",
+          "last_name": "Bagawan",
+          "email": "1@email.com",
+          "phone": "(624) 646-4714",
+          "line1": "194 Sunway Square",
+          "city": "Markham",
+          "state_code": "ON",
+          "state": "Ontario",
+          "country": "CA",
+          "zip": "L3P7X3",
+          "validation_status": "not_validated",
+          "object": "billing_address"
+        },
+        "shipping_address": {
+          "first_name": "Ajandan",
+          "last_name": "Bagawan",
+          "email": "1@email.com",
+          "phone": "(624) 646-4714",
+          "line1": "194 Sunway Square",
+          "city": "Markham",
+          "state_code": "ON",
+          "state": "Ontario",
+          "country": "CA",
+          "zip": "L3P7X3",
+          "validation_status": "not_validated",
+          "object": "shipping_address"
+        }
+      }
+    },
+    "event_type": "subscription_created",
+    "webhook_status": "not_configured",
+    "webhooks": [
+      {
+        "id": "whv2_AzyuGqSNKnBlPa2C",
+        "webhook_status": "not_applicable",
+        "object": "webhook"
+      },
+      {
+        "id": "whv2_JD8rbdRRdg2nVEYSQ",
+        "webhook_status": "succeeded",
+        "object": "webhook"
+      }
+    ]
+  }
+}

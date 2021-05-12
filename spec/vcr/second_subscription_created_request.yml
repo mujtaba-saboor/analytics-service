@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.segment.io/v1/track
+    body:
+      encoding: UTF-8
+      string: '{"userId":"kabo-analytics","anonymousId":null,"context":{"library":{"name":"simple_segment","version":"0.3.0"}},"integrations":null,"timestamp":"2021-05-12T17:23:44+05:00","sentAt":"2021-05-12T17:23:44+05:00","event":"Subscription
+        Created","properties":{"itlySchema":"https://iterative.ly/company/662d6770-1c1f-44bf-ab92-37781f19a49a/event/Subscription%20Created/version/2.0.0","itlySource":"analytics_service","itlyVersion":"0.1.0","discount_code":"40off","products":"beef_2_weeks-trial,
+        chicken_2_weeks-trial","subscription_id":"AzZlpqSOe2KCWvHS","subscription_mrr":"37100","subscription_time_interval":14,"subscription_value":"18550"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic UXRuQmRpS0RDSlN1RXlFZVhyZm5ZbjI2OXBxR2c5cms6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 May 2021 12:23:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '21'
+      Connection:
+      - keep-alive
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "success": true
+        }
+  recorded_at: Wed, 12 May 2021 12:23:45 GMT
+recorded_with: VCR 6.0.0

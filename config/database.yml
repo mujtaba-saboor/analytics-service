@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: kabo_analytics_service_development
+  username: kabo_analytics_service
+
+test:
+  <<: *default
+  database: kabo_analytics_service_test
+
+production:
+  <<: *default
+  database: kabo_analytics_service_production
+  username: kabo_analytics_service

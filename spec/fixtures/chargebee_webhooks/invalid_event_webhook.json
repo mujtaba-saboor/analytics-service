@@ -1,0 +1,29 @@
+{
+  "headers": {
+    "Authorization": "Basic aGFzc2FuQGdyb3d0aHBoeXNpY3MuY29tOnRlc3RpbmcxMjM=",
+    "Content-Type": "application/json; charset=utf-8",
+    "User-Agent": "ChargeBee"
+  },
+  "body": {
+    "id": "ev_AzZlpqSOe2Kh6vHw",
+    "occurred_at": 1612985393,
+    "source": "api",
+    "user": "Rails App",
+    "object": "event",
+    "api_version": "v2",
+    "event_type": "invalid_webhook",
+    "webhook_status": "not_configured",
+    "webhooks": [
+      {
+        "id": "whv2_AzyuGqSNKnBlPa2C",
+        "webhook_status": "not_applicable",
+        "object": "webhook"
+      },
+      {
+        "id": "whv2_JD8rbdRRdg2nVEYSQ",
+        "webhook_status": "succeeded",
+        "object": "webhook"
+      }
+    ]
+  }
+}
